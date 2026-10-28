@@ -68,27 +68,30 @@ code { background: var(--card); padding: .1rem .35rem; border-radius: 4px;
 <h2 id="data">1. What the app stores, and where</h2>
 <p>Everything you enter is stored on your own phone, tablet or computer, inside the app&rsquo;s private storage:</p>
 <ul>
-  <li>Your business details (name, address, email, phone, currency and mileage rate), used to head your reports.</li>
-  <li>Your expense categories, expenses (date, amount, vendor, category, how you paid, notes, whether someone owes you back and who) and mileage trips.</li>
+  <li>Your business details (name, address, email, phone, logo, invoice numbering, tax, currency and mileage rate), used on your invoices and to head your reports.</li>
+  <li>Your clients (name, email, phone and address) and your invoices, with their line items and the payments you record against them.</li>
+  <li>Payment links and social links you add, and the opening and signature of the invoice email.</li>
+  <li>Your expense categories, expenses (date, amount, vendor, category, how you paid, notes, whether it is billable and to whom) and mileage trips.</li>
   <li>Receipt photos you take or choose.</li>
   <li>The app&rsquo;s own settings (colour, text size, which columns to show).</li>
 </ul>
 <p>There is no account, sign-in or password, and no server of ours that holds any of this, so we cannot see it, recover it, or back it up for you.</p>
 
 <h2 id="photos">2. Receipt photos and permissions</h2>
-<p>The camera is used only when you tap to photograph a receipt. When you choose a photo from your library the app receives only that one image; it cannot browse your photos. Either way the app keeps a reduced copy inside its own storage on your device. Photos are never uploaded by the app. On iPhone the app asks for camera and photo-library permission the first time you use them; you can withdraw either in your device settings and the rest of the app keeps working.</p>
+<p>The camera is used only when you tap to photograph a receipt. While the receipt camera is open the app analyses the live picture on your device to suggest how to line the receipt up (centring, light, distance); nothing from that analysis is stored or sent. When you add a receipt photo the app reads the text on it entirely on your device (Apple’s Vision framework on iPhone and Mac; a text model bundled inside the app on Android) to suggest the merchant, date and total. The photo and the recognised text are never sent anywhere, and you can change every suggestion. You can also attach a PDF receipt from your files. When you choose a photo from your library the app receives only that one image; it cannot browse your photos. Either way the app keeps a reduced copy inside its own storage on your device. Photos and PDFs are never uploaded by the app. On iPhone the app asks for camera and photo-library permission the first time you use them; you can withdraw either in your device settings and the rest of the app keeps working.</p>
 
 <h2 id="sharing">3. When information leaves your device because you chose it</h2>
-<p>Plume Expense can create a report of your expenses and trips as an Excel file or a PDF. A report is first saved in the app&rsquo;s own Documents folder on your device, and you can then hand it to your phone&rsquo;s share sheet. Where it goes next &mdash; email, messages, cloud storage, another app &mdash; is decided by you and governed by that app&rsquo;s own terms. A PDF report can include your receipt photos if you switch that on. We never receive reports.</p>
+<p>Plume Expense can create a PDF of an invoice, and a report of your expenses, trips or payments as an Excel file or a PDF. When you save one, your device&rsquo;s &ldquo;save as&rdquo; dialog lets you choose where it goes (the app keeps no copy of it), and you can hand it to your phone&rsquo;s share sheet. Where it goes next &mdash; email, messages, cloud storage, another app &mdash; is decided by you and governed by that app&rsquo;s own terms. A PDF report can include your receipt photos if you switch that on.</p>
+<p><strong>Email to client</strong> opens your own mail app, addressed to the client, with the invoice PDF attached and the opening and signature you set; the app never sends the email itself, you do. <strong>Payment links</strong> you add (PayPal, Venmo, Cash App, Stripe, Square or your own) are printed on your invoices and open in the client&rsquo;s browser or app when tapped; Plume Expense does not process payments and never sees what a client pays. We never receive invoices, reports or emails.</p>
 
 <h2 id="third">4. Advertising, analytics and third parties</h2>
 <p>None. The app is a paid app: it contains no advertising, no advertising ID, no analytics, no crash reporting and no tracking, and no third-party service receives data from it. It makes no network connections of its own. The open-source libraries it is built from run entirely on your device; their licences are listed under Settings &rarr; Privacy &rarr; Open-source licences.</p>
 
 <h2 id="retention">5. How long it is kept, and deleting it</h2>
-<p>Everything stays on your device until you delete it. You can edit or delete any expense, trip or category at any time. <strong>Settings &rarr; Erase all data</strong> removes your business details, categories, expenses, trips, receipt photos and saved reports at once, and uninstalling the app removes everything. There is no copy anywhere else to delete.</p>
+<p>Everything stays on your device until you delete it. You can edit or delete any expense, trip or category at any time. <strong>Settings &rarr; Erase all data</strong> removes your business details, clients, invoices, payments, categories, expenses, trips and receipt photos at once, and uninstalling the app removes everything. Files you saved with the &ldquo;save as&rdquo; dialog are yours and stay where you put them. There is no copy anywhere else to delete.</p>
 
 <h2 id="others">6. Other people&rsquo;s information</h2>
-<p>Names you type (a vendor, or who an expense is billed to) and what appears on a receipt are your own records. Because they never reach us, any request to see or delete them is for you to handle, and you can do so by editing or deleting the entry.</p>
+<p>Client names and contact details, vendor names, and what appears on a receipt are your own records. Because they never reach us, any request to see or delete them is for you to handle, and you can do so by editing or deleting the entry.</p>
 
 <h2 id="security">7. Security</h2>
 <p>Your records live in the app&rsquo;s private storage, protected by your device&rsquo;s own security (screen lock and, where available, device encryption). Because the app has no server and makes no connections, there is no online service to breach. Anyone who can unlock your device and open the app can see your records, so keep your device locked.</p>
